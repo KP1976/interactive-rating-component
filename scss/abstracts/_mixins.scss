@@ -1,0 +1,16 @@
+@mixin flex-column($gap: 0) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+@mixin flex-row($gap: 0) {
+  display: flex;
+  gap: $gap;
+}
+
+@mixin respond-to($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
