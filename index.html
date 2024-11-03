@@ -20,7 +20,7 @@
   </head>
   <body>
     <main>
-      <article class="rating-card">
+      <form class="rating-card">
         <img
           class="rating-card__image"
           src="./images/icon-star.svg"
@@ -37,47 +37,89 @@
             </div>
             <ul class="rating-card__numbers">
               <li class="rating-card__number">
-                <button class="rating-card__button rating-card__button--1">
-                  1
-                </button>
+                <input
+                  class="rating-card__input"
+                  type="radio"
+                  name="rating"
+                  value="1"
+                  id="rate1"
+                  required
+                />
+                <label class="rating-card__label" for="rate1">1</label>
               </li>
-              <li>
-                <button class="rating-card__button rating-card__button--2">
-                  2
-                </button>
+              <li class="rating-card__number">
+                <input
+                  class="rating-card__input"
+                  type="radio"
+                  name="rating"
+                  value="2"
+                  id="rate2"
+                  required
+                />
+                <label class="rating-card__label" for="rate1">2</label>
               </li>
-              <li>
-                <button class="rating-card__button rating-card__button--3">
-                  3
-                </button>
+              <li class="rating-card__number">
+                <input
+                  class="rating-card__input"
+                  type="radio"
+                  name="rating"
+                  value="3"
+                  id="rate3"
+                  required
+                />
+                <label class="rating-card__label" for="rate1">3</label>
               </li>
-              <li>
-                <button class="rating-card__button rating-card__button--4">
-                  4
-                </button>
+              <li class="rating-card__number">
+                <input
+                  class="rating-card__input"
+                  type="radio"
+                  name="rating"
+                  value="4"
+                  id="rate4"
+                  required
+                />
+                <label class="rating-card__label" for="rate1">4</label>
               </li>
-              <li>
-                <button class="rating-card__button rating-card__button--5">
-                  5
-                </button>
+              <li class="rating-card__number">
+                <input
+                  class="rating-card__input"
+                  type="radio"
+                  name="rating"
+                  value="5"
+                  id="rate5"
+                  required
+                />
+                <label class="rating-card__label" for="rate1">5</label>
               </li>
             </ul>
           </div>
-          <button class="rating-card__button rating-card__button--submit">
+          <button
+            class="rating-card__button rating-card__button--submit"
+            type="submit"
+          >
             Submit
           </button>
         </div>
-      </article>
+      </form>
+
+      <dialog class="dialog">
+        <img
+          class="dialog__image"
+          src="./images/illustration-thank-you.svg"
+          alt="Thank you image"
+        />
+        <p class="dialog__selected-text">
+          You selected
+          <span class="dialog__rating"></span>
+          out of 5
+        </p>
+        <h2 class="dialog__title">Thank you!</h2>
+        <p class="dialog__text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </dialog>
     </main>
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
 
     <footer class="attribution">
       Challenge by
