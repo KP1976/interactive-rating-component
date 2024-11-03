@@ -143,7 +143,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-family: "Overpass";
+  font-family: "Overpass", serif;
   min-height: 100dvh;
   justify-content: space-between;
 }
