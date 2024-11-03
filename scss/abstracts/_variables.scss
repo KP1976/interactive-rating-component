@@ -10,7 +10,7 @@ $very-dark-blue: hsl(216, 12%, 8%);
 $white: hsl(0, 0%, 100%);
 
 // GRADIENTS
-$gradient: radial-gradient(circle, $dark-blue 0%, $darker-blue 100%);
+$gradient: radial-gradient(circle at top, $dark-blue 0%, $darker-blue 100%);
 
 // TYPOGRAPHY
 $font-name: "Overpass", serif;
