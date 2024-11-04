@@ -20,4 +20,23 @@
     height: 0.875rem;
     width: 0.875rem;
   }
+
+  &__content {
+    @include flex-column($space-325);
+  }
+
+  &__header {
+    @include flex-column($space-250);
+  }
+
+  &__text-container {
+    @include flex-column($space-175);
+  }
+
+  &__question {
+    color: $white;
+    font-size: $font-size-300;
+    font-weight: 700;
+    letter-spacing: $letter-spacing_-02;
+  }
 }
