@@ -22,7 +22,7 @@
   </head>
   <body>
     <main>
-      <form class="rating-card">
+      <form class="rating-card" role="form" aria-label="Rating form">
         <div class="rating-card__image-container">
           <img
             src="./assets/images/icon-star.svg"
@@ -41,7 +41,11 @@
               </p>
             </div>
 
-            <ul class="rating-card__numbers">
+            <ul
+              class="rating-card__numbers"
+              role="radiogroup"
+              aria-label="Rating numbers"
+            >
               <li class="rating-card__number">
                 <input
                   type="radio"
@@ -49,6 +53,7 @@
                   name="rating"
                   value="1"
                   class="rating-card__input"
+                  aria-label="1 star rating"
                 />
                 <label for="rating-1" class="rating-card__label">1</label>
               </li>
@@ -59,6 +64,7 @@
                   name="rating"
                   value="2"
                   class="rating-card__input"
+                  aria-label="2 star rating"
                 />
                 <label for="rating-2" class="rating-card__label">2</label>
               </li>
@@ -69,6 +75,7 @@
                   name="rating"
                   value="3"
                   class="rating-card__input"
+                  aria-label="3 star rating"
                 />
                 <label for="rating-3" class="rating-card__label">3</label>
               </li>
@@ -79,6 +86,7 @@
                   name="rating"
                   value="4"
                   class="rating-card__input"
+                  aria-label="4 star rating"
                 />
                 <label for="rating-4" class="rating-card__label">4</label>
               </li>
@@ -89,12 +97,13 @@
                   name="rating"
                   value="5"
                   class="rating-card__input"
+                  aria-label="5 star rating"
                 />
                 <label for="rating-5" class="rating-card__label">5</label>
               </li>
             </ul>
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" class="rating-card__submit">Submit</button>
         </div>
       </form>
 

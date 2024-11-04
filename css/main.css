@@ -217,26 +217,38 @@ main {
   justify-content: space-between;
 }
 .rating-card__number {
-  background-color: hsl(213, 19%, 18%);
-  border-radius: 50%;
-  color: hsl(217, 12%, 63%);
-  cursor: pointer;
-  height: 2.625rem;
-  width: 2.625rem;
+  position: relative;
 }
 .rating-card__input {
-  display: none;
-}
-.rating-card__input:checked + .rating-card__label {
-  background-color: hsl(25, 97%, 53%);
-  color: hsl(216, 12%, 8%);
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
 }
 .rating-card__label {
   align-items: center;
+  background-color: hsl(213, 19%, 18%);
   border-radius: 50%;
+  color: hsl(217, 12%, 63%);
   display: flex;
   font-weight: 700;
   justify-content: center;
   height: 2.625rem;
   width: 2.625rem;
+  transition: all 0.2s ease-in-out;
+}
+.rating-card__input:checked + .rating-card__label {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+.rating-card__input:hover + .rating-card__label {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(214, 26%, 12%);
+}
+.rating-card__input:focus-visible + .rating-card__label {
+  outline: 2px solid hsl(0, 0%, 100%);
+  outline-offset: 2px;
 }
