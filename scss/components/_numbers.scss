@@ -1,0 +1,32 @@
+&__numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+&__number {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  height: 2.625rem;
+  width: 2.625rem;
+}
+
+&__input {
+  display: none;
+}
+
+&__input:checked + &__label {
+  background-color: hsl(25, 97%, 53%);
+  color: $very-dark-blue;
+}
+
+&__label {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  height: 2.625rem;
+  width: 2.625rem;
+}

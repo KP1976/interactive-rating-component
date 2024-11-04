@@ -25,11 +25,12 @@
       <form class="rating-card">
         <div class="rating-card__image-container">
           <img
-            class="rating-card__image"
             src="./assets/images/icon-star.svg"
             alt="Star icon"
+            class="rating-card__image"
           />
         </div>
+
         <div class="rating-card__content">
           <div class="rating-card__header">
             <div class="rating-card__text-container">
@@ -39,70 +40,61 @@
                 feedback is appreciated to help us improve our offering!
               </p>
             </div>
+
             <ul class="rating-card__numbers">
               <li class="rating-card__number">
                 <input
-                  class="rating-card__input"
                   type="radio"
+                  id="rating-1"
                   name="rating"
                   value="1"
-                  id="rate1"
-                  required
+                  class="rating-card__input"
                 />
-                <label class="rating-card__label" for="rate1">1</label>
+                <label for="rating-1" class="rating-card__label">1</label>
               </li>
               <li class="rating-card__number">
                 <input
-                  class="rating-card__input"
                   type="radio"
+                  id="rating-2"
                   name="rating"
                   value="2"
-                  id="rate2"
-                  required
+                  class="rating-card__input"
                 />
-                <label class="rating-card__label" for="rate1">2</label>
+                <label for="rating-2" class="rating-card__label">2</label>
               </li>
               <li class="rating-card__number">
                 <input
-                  class="rating-card__input"
                   type="radio"
+                  id="rating-3"
                   name="rating"
                   value="3"
-                  id="rate3"
-                  required
+                  class="rating-card__input"
                 />
-                <label class="rating-card__label" for="rate1">3</label>
+                <label for="rating-3" class="rating-card__label">3</label>
               </li>
               <li class="rating-card__number">
                 <input
-                  class="rating-card__input"
                   type="radio"
+                  id="rating-4"
                   name="rating"
                   value="4"
-                  id="rate4"
-                  required
+                  class="rating-card__input"
                 />
-                <label class="rating-card__label" for="rate1">4</label>
+                <label for="rating-4" class="rating-card__label">4</label>
               </li>
               <li class="rating-card__number">
                 <input
-                  class="rating-card__input"
                   type="radio"
+                  id="rating-5"
                   name="rating"
                   value="5"
-                  id="rate5"
-                  required
+                  class="rating-card__input"
                 />
-                <label class="rating-card__label" for="rate1">5</label>
+                <label for="rating-5" class="rating-card__label">5</label>
               </li>
             </ul>
           </div>
-          <button
-            class="rating-card__button rating-card__button--submit"
-            type="submit"
-          >
-            Submit
-          </button>
+          <button type="submit">Submit</button>
         </div>
       </form>
 
