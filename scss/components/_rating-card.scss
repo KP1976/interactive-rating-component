@@ -5,9 +5,19 @@
   padding: $space-300 $space-300 $space-400;
 
   &__image-container {
+    align-items: center;
     background-color: $dark-blue;
     border-radius: 50%;
+    @include flex-column();
+    justify-content: center;
     height: 2.5rem;
     width: 2.5rem;
+  }
+
+  &__image {
+    display: block;
+    object-fit: cover;
+    height: 0.875rem;
+    width: 0.875rem;
   }
 }
