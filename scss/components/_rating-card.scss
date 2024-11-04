@@ -39,4 +39,10 @@
     font-weight: 700;
     letter-spacing: $letter-spacing_-02;
   }
+
+  &__text {
+    font-size: $font-size-175;
+    line-height: $line-height-155;
+    letter-spacing: $letter-spacing_-01;
+  }
 }
