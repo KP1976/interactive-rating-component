@@ -1,0 +1,51 @@
+.dialog {
+  background: $gradient;
+  border-radius: $border-radius-200;
+  @include flex-column($space-400);
+  padding: $space-400 $space-300;
+
+  &__image-container {
+    align-items: center;
+    @include flex-column($space-325);
+    justify-content: center;
+  }
+
+  &__image {
+    display: block;
+    object-fit: cover;
+    height: 6rem;
+  }
+
+  &__selected-text {
+    background-color: $dark-blue;
+    border-radius: 3rem;
+    color: $orange;
+    font-size: $font-size-175;
+    height: 2rem;
+    line-height: 2.1rem;
+    padding: 0 $space-250;
+    text-align: center;
+  }
+
+  &__content {
+    @include flex-column($space-200);
+    text-align: center;
+  }
+
+  &__title {
+    color: $white;
+    font-size: $font-size-300;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: $light-grey;
+    font-size: $font-size-175;
+    line-height: $line-height-155;
+    letter-spacing: $letter-spacing_-01;
+  }
+
+  // &::backdrop {
+  //   background: $gradient;
+  // }
+}

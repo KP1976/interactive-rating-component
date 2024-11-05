@@ -1,7 +1,8 @@
 .rating-card {
+  display: none;
   background: $gradient;
   border-radius: $border-radius-200;
-  @include flex-column($space-300);
+  // @include flex-column($space-300);
   padding: $space-300 $space-300 $space-400;
 
   &__image-container {

@@ -161,11 +161,9 @@ main {
 }
 
 .rating-card {
+  display: none;
   background: radial-gradient(circle at top, hsl(213, 19%, 18%) 0%, hsl(214, 26%, 12%) 100%);
   border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
   padding: 1.5rem 1.5rem 2rem;
 }
 .rating-card__image-container {
@@ -264,6 +262,55 @@ main {
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+}
+
+.dialog {
+  background: radial-gradient(circle at top, hsl(213, 19%, 18%) 0%, hsl(214, 26%, 12%) 100%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+}
+.dialog__image-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+  justify-content: center;
+}
+.dialog__image {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 6rem;
+}
+.dialog__selected-text {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 3rem;
+  color: hsl(25, 97%, 53%);
+  font-size: 0.875rem;
+  height: 2rem;
+  line-height: 2.1rem;
+  padding: 0 1.25rem;
+  text-align: center;
+}
+.dialog__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+.dialog__title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.dialog__text {
+  color: hsl(217, 12%, 63%);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  letter-spacing: -0.1px;
 }
 
 .attribution {
