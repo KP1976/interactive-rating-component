@@ -1,7 +1,7 @@
 .dialog {
   background: $gradient;
   border-radius: $border-radius-200;
-  @include flex-column($space-400);
+  // @include flex-column($space-400);
   padding: $space-400 $space-300;
 
   &__image-container {

@@ -28,6 +28,11 @@
   height: 2.625rem;
   width: 2.625rem;
   transition: all 0.2s ease-in-out;
+
+  @include respond-to($breakpoint) {
+    height: 3rem;
+    width: 3rem;
+  }
 }
 
 &__input:checked + &__label {

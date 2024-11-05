@@ -1,9 +1,16 @@
 .rating-card {
-  display: none;
+  // display: none;
   background: $gradient;
   border-radius: $border-radius-200;
-  // @include flex-column($space-300);
+  @include flex-column($space-300);
+  max-width: 25.5rem;
   padding: $space-300 $space-300 $space-400;
+
+  @include respond-to($breakpoint) {
+    border-radius: $border-radius-400;
+    @include flex-column($space-475);
+    padding: $space-400;
+  }
 
   &__image-container {
     align-items: center;
@@ -13,6 +20,11 @@
     justify-content: center;
     height: 2.5rem;
     width: 2.5rem;
+
+    @include respond-to($breakpoint) {
+      height: 3rem;
+      width: 3rem;
+    }
   }
 
   &__image {
@@ -20,18 +32,35 @@
     object-fit: cover;
     height: 0.875rem;
     width: 0.875rem;
+
+    @include respond-to($breakpoint) {
+      height: 1rem;
+      width: 1rem;
+    }
   }
 
   &__content {
     @include flex-column($space-325);
+
+    @include respond-to($breakpoint) {
+      @include flex-column($space-400);
+    }
   }
 
   &__header {
     @include flex-column($space-250);
+
+    @include respond-to($breakpoint) {
+      @include flex-column($space-300);
+    }
   }
 
   &__text-container {
     @include flex-column($space-175);
+
+    @include respond-to($breakpoint) {
+      @include flex-column($space-125);
+    }
   }
 
   &__question {
@@ -39,12 +68,21 @@
     font-size: $font-size-300;
     font-weight: 700;
     letter-spacing: $letter-spacing_-02;
+
+    @include respond-to($breakpoint) {
+      font-size: $font-size-350;
+    }
   }
 
   &__text {
     font-size: $font-size-175;
     line-height: $line-height-155;
     letter-spacing: $letter-spacing_-01;
+
+    @include respond-to($breakpoint) {
+      line-height: $line-height-170;
+      letter-spacing: $letter-spacing_035;
+    }
   }
 
   @import "./numbers";
