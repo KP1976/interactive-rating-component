@@ -161,16 +161,20 @@ main {
 }
 
 .rating-card {
-  display: none;
   background: radial-gradient(circle at top, hsl(213, 19%, 18%) 0%, hsl(214, 26%, 12%) 100%);
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   max-width: 25.5rem;
   padding: 1.5rem 1.5rem 2rem;
 }
 @media (min-width: 408px) {
   .rating-card {
-    display: none;
     border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.375rem;
     padding: 2rem;
   }
 }
@@ -325,18 +329,12 @@ main {
 .dialog {
   background: radial-gradient(circle at top, hsl(213, 19%, 18%) 0%, hsl(214, 26%, 12%) 100%);
   border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
   max-width: 25.5rem;
   padding: 2rem 1.5rem;
 }
 @media (min-width: 408px) {
   .dialog {
     border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
     padding: 2.75rem 2rem;
   }
 }

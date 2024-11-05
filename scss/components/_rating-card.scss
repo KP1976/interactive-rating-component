@@ -1,15 +1,15 @@
 .rating-card {
-  display: none;
+  // display: none;
   background: $gradient;
   border-radius: $border-radius-200;
-  // @include flex-column($space-300);
+  @include flex-column($space-300);
   max-width: 25.5rem;
   padding: $space-300 $space-300 $space-400;
 
   @include respond-to($breakpoint) {
-    display: none;
+    // display: none;
     border-radius: $border-radius-400;
-    // @include flex-column($space-475);
+    @include flex-column($space-475);
     padding: $space-400;
   }
 

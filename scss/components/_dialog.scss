@@ -1,13 +1,13 @@
 .dialog {
   background: $gradient;
   border-radius: $border-radius-200;
-  @include flex-column($space-400);
+  // @include flex-column($space-400);
   max-width: 25.5rem;
   padding: $space-400 $space-300;
 
   @include respond-to($breakpoint) {
     border-radius: $border-radius-400;
-    @include flex-column($space-500);
+    // @include flex-column($space-500);
     padding: $space-550 $space-400;
   }
 
