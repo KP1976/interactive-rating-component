@@ -47,4 +47,17 @@
   }
 
   @import "./numbers";
+
+  &__submit {
+    background-color: $orange;
+    border: none;
+    border-radius: 5rem;
+    color: $very-dark-blue;
+    font-weight: 700;
+    height: 2.75rem;
+    letter-spacing: $letter-spacing_2_7;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
 }
