@@ -1,0 +1,10 @@
+.attribution {
+  font-size: $font-size-175;
+  padding: $space-200 0;
+  text-align: center;
+
+  &__link {
+    color: $orange;
+    text-decoration: none;
+  }
+}
