@@ -80,7 +80,11 @@
     }
   }
 
-  // &::backdrop {
-  //   background: $gradient;
-  // }
+  &.show {
+    @include flex-column($space-400);
+
+    @include respond-to($breakpoint) {
+      @include flex-column($space-500);
+    }
+  }
 }

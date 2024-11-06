@@ -93,6 +93,7 @@
     border: none;
     border-radius: 5rem;
     color: $very-dark-blue;
+    cursor: pointer;
     font-size: $font-size-175;
     font-weight: 700;
     height: 2.75rem;
@@ -101,4 +102,8 @@
     text-transform: uppercase;
     width: 100%;
   }
+}
+
+.hidden {
+  display: none;
 }
